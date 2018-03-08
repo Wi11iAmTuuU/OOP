@@ -2,8 +2,27 @@
 #include <string>
 #include <iostream>
 using namespace System;
-bool Guess(int number) {
-}
-int main(array<System::String ^> ^args)
+bool Guess(int number)
 {
+	if (number > target) {
+		std::cout << "Smaller" << std::endl;
+		return false;
+	}
+	else if (number < target) {
+		std::cout << "Bigger" << std::endl;
+		return false;
+	}
+	return true;
+}
+int main(array<System::String^>^ args)
+{
+    int guess;
+
+    do
+    {
+        std::cin >> guess;
+    }
+    while (!Guess(guess));
+
+    return 0;
 }
