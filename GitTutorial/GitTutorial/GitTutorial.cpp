@@ -1,5 +1,3 @@
-// GitTutorial.cpp: 主要專案檔。
-
 #include "stdafx.h"
 #include <string>
 #include <iostream>
