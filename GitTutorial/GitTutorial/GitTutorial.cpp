@@ -6,6 +6,15 @@
 using namespace System;
 bool Guess(int number)
 {
+	if (number > target) {
+		std::cout << "Smaller" << std::endl;
+		return false;
+	}
+	else if (number < target) {
+		std::cout << "Bigger" << std::endl;
+		return false;
+	}
+	return true;
 }
 int main(array<System::String^>^ args)
 {
